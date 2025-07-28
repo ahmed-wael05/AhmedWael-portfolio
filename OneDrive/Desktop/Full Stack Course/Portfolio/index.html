@@ -1,0 +1,123 @@
+echo "# AhmedWael-portfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmed-wael05/AhmedWael-portfolio.git
+git push -u origin main
+    <div className="min-h-screen bg-gray-100 p-6 text-gray-800">
+      <div className="max-w-4xl mx-auto">
+        <header className="text-center mb-10">
+          <h1 className="text-4xl font-bold mb-2">Ahmed Wael</h1>
+          <p className="text-xl">AI Engineer – Remote from Egypt</p>
+          <div className="mt-4 flex justify-center gap-4 text-sm">
+            <div className="flex items-center gap-2">
+              <Mail size={16} /> ahmedwaeleltopshy@gmail.com
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone size={16} /> +20 120 176 6990
+            </div>
+            <a
+              href="https://www.linkedin.com/in/ahmed-wael-30113331a"
+              target="_blank"
+              className="flex items-center gap-2 text-blue-600 hover:underline"
+            >
+              <Linkedin size={16} /> LinkedIn
+            </a>
+          </div>
+        </header>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Python",
+              "Machine Learning",
+              "Deep Learning",
+              "Artificial Intelligence"
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+
+          <Card className="mb-6">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">
+                Skin Cancer Detection – CNN Model
+              </h3>
+              <p className="mb-2">
+                A deep learning project using Python, Keras, and CNNs to detect skin
+                cancer from medical images. The model analyzes image datasets to
+                classify different types of skin cancer with high accuracy.
+              </p>
+              <p className="text-sm text-gray-600">
+                Tech Stack: Python, Keras, CNN, Image Processing
+              </p>
+              <a
+                href="https://www.kaggle.com/code/ahmedwael24/skin-cancer-cnn-project"
+                target="_blank"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                View Project on Kaggle
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-6">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">
+                Chronic Kidney Disease Prediction
+              </h3>
+              <p className="mb-2">
+                A machine learning model trained on clinical data to predict chronic
+                kidney disease (CKD). Includes preprocessing, encoding, and
+                classification to support early diagnosis.
+              </p>
+              <p className="text-sm text-gray-600">
+                Tech Stack: Python, Scikit-learn, Pandas, Classification
+              </p>
+              <a
+                href="https://www.kaggle.com/code/ahmedwael24/chronic-kidney-disease-project"
+                target="_blank"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                View Project on Kaggle
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">
+                Titanic Survival Prediction
+              </h3>
+              <p className="mb-2">
+                A supervised machine learning project predicting survival on the
+                Titanic. Includes feature engineering, model training, and evaluation.
+              </p>
+              <p className="text-sm text-gray-600">
+                Tech Stack: Python, Scikit-learn, Pandas, Data Visualization
+              </p>
+              <a
+                href="https://www.kaggle.com/code/ahmedwael24/titanic-machinelearn-project"
+                target="_blank"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                View Project on Kaggle
+              </a>
+            </CardContent>
+          </Card>
+        </section>
+      </div>
+    </div>
+  );
+}
